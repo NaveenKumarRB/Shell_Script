@@ -7,7 +7,10 @@
 #This Script will help you to track the aws_resources_usage
 ###############
 
-set -x
+set - x # Help you to execute on Debug Mode
+set - e # Help to exits if the script failed
+set - o # Helps to exits the script filed on pipe lines
+
 # AWS S3
 # AWS EC2
 # AWS LAMBDA
