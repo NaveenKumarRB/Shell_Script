@@ -16,7 +16,7 @@ set -x
 # List S3 Buckets
 echo "Print list s3 buckets"
 aws s3 ls > ResourceTracker
-#> ResourceTracker - This helps you to put the data on the ResourceTracker file
+# "> ResourceTracker - This helps you to put the data on the ResourceTracker file"
 
 # List AWS_EC2 Instances
 echo "Print list EC2 Instances"
@@ -26,7 +26,7 @@ aws ec2 describe-instances | jq 'Reservations[].Instances[].InstanceID[]' >> Res
 
 # List Lambda
 echo "Print list Lambda"
-aws lambda lis-functions >>> ResourceTracker
+aws lambda list-functions >>> ResourceTracker
 
 # List IAM Users
 echo "Print list IAM Users"
