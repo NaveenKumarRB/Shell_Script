@@ -20,14 +20,14 @@ aws s3 ls > ResourceTracker
 
 # List AWS_EC2 Instances
 echo "Print list EC2 Instances"
-aws ec2 describe-instances | jq 'Reservations[].Instances[].InstanceID[]' >> ResourceTracker
+aws ec2 describe-instances | jq 'Reservations[].Instances[].InstanceID[]' > ResourceTracker
 
 #(|- Pipe will help you send the previour output, jq-refers as Json Path & yq refers as YAML Path & ('Reservations[].Instances[].InstanceID[]')- helps you to provide the data which are available in Instance ID, this provide the path)
 
 # List Lambda
 echo "Print list Lambda"
-aws lambda list-functions >>> ResourceTracker
+aws lambda list-functions > ResourceTracker
 
 # List IAM Users
 echo "Print list IAM Users"
-aws iam list-users >>>> ResourceTracker
+aws iam list-users > ResourceTracker
