@@ -1,1 +1,7 @@
-ls  # To list files
+pwd # Present working directory
+ls  # list files
+ls -l # List all the files with details
+ls - a # List all files with hidden files alongs with .  & ..
+cd # change directory
+cd .. # change the directory to backwards
+cd / #change the directory to home directory
