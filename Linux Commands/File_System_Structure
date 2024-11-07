@@ -1,0 +1,35 @@
+/bin: Essential command binaries for booting and system repair.
+
+/boot: Files required for the boot loader.
+
+/dev: Device files representing hardware components.
+
+/etc: Host-specific system-wide configuration files.
+
+/home: Personal directories for individual users to store files.
+
+/lib: Shared library modules for programs.
+
+/media: Mounting point for removable media like CD-ROMs.
+
+/mnt: Temporary mount point for file systems.
+
+/opt: Installation directory for additional software packages.
+
+/proc: Virtual file system providing information about running processes.
+
+/root: Home directory for the root user.
+
+/run: Run-time variable data like process IDs.
+
+/sbin: Binaries for system administration tasks.
+
+/srv: Site-specific data served by the system.
+
+/sys: Virtual directory providing kernel information.
+
+/tmp: Temporary files, regularly deleted.
+
+/usr: Read-only user files, libraries, and documentation.
+
+/var: Files that are expected to grow in size and content, such as logs
